@@ -30,7 +30,7 @@ public class SortResultsView extends JDialog{
 	private static final long serialVersionUID = 1L;
 	
 	private Border border = BorderFactory.createLineBorder(Color.GRAY, 2);
-	private static  int  labelSize = 100;
+	
 	private JLabel sortOrder = new JLabel("Sorted Order ");
 	private JLabel insertionOrder = new JLabel("Insertion Order");
 	 private Font dataF = new Font("Serif", Font.PLAIN, 14);
@@ -48,7 +48,7 @@ public class SortResultsView extends JDialog{
 
 	     
 	  
-	    int windowDim = labelSize * solution.length;
+	  
 	  
 	    setLayout(new GridBagLayout());
 	    GridBagConstraints gbc = new GridBagConstraints();
