@@ -1,9 +1,13 @@
 package ro.alex.controller;
+/**
+ * @author Alexandru Comsa
+ */
 
 import java.util.ArrayList;
 
 import ro.alex.model.QuickSortModel;
 import ro.alex.view.QuickSortView;
+
 
 public class QuickSortController {
 	private QuickSortModel model;
@@ -14,7 +18,7 @@ public class QuickSortController {
 	 * @param view
 	 */
 	public QuickSortController(QuickSortModel model, QuickSortView view) {
-		// TODO Auto-generated constructor stub
+		
 		this.model = model;
 		this.view = view;
 	}
@@ -44,6 +48,7 @@ public class QuickSortController {
 		model.setNumbers(viewCollector);
 		model.setNumber(size);
 		model.sort();
+		view.displayResults(model.getNumbers());
 	}
 
 }
